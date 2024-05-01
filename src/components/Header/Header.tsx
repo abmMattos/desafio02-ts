@@ -1,9 +1,17 @@
-import './Header.css'
+import { Box, Center, ChakraProvider } from '@chakra-ui/react'
 
-export const Header  = () => {
+export const Header = () => {
   return(
-    <div className='header'>
-      Dio Bank
-    </div>
+    <ChakraProvider>
+      <Box 
+      display="flex" 
+      h="70px" 
+      padding="0% 10%">
+      <Center fontWeight='semibold' fontSize="1.5em" >
+        DIO CHALLENGE
+      </Center>
+    </Box>
+    </ChakraProvider>
+    
   )
 }
